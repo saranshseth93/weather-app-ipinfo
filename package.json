@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "moment-timezone": "^0.5.33",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -23,22 +20,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "react-dotenv": {
     "whitelist": [
       "API_KEY",
-      "BASE_URL"
+      "BASE_URL",
+      "IP_KEY"
     ]
   }
 }

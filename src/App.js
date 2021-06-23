@@ -30,7 +30,7 @@ function App() {
   }, [city]); // Whenever city is changed
 
   const initialLoad = () => {
-    fetch(`https://ipinfo.io?token=75832bdf153bdc`)
+    fetch(`https://ipinfo.io?token=${env.IP_KEY}`)
       .then(res => res.json())
       .then(result => {
         if (result !== "undefined" || result !== "") {

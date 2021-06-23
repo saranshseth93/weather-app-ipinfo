@@ -9,6 +9,7 @@ import iconSnow from "./assets/amcharts_weather_icons_1.0.0/animated/snowy-1.svg
 import iconThunder from "./assets/amcharts_weather_icons_1.0.0/animated/thunder.svg";
 import moment from "moment";
 
+console.log(env);
 const api = {
   key: env.API_KEY,
   base: env.BASE_URL
@@ -29,8 +30,7 @@ function App() {
   }, [city]); // Whenever city is changed
 
   const initialLoad = () => {
-    console.log("initial");
-    fetch("https://ipinfo.io?token=75832bdf153bdc")
+    fetch(`https://ipinfo.io?token=75832bdf153bdc`)
       .then(res => res.json())
       .then(result => {
         if (result !== "undefined" || result !== "") {

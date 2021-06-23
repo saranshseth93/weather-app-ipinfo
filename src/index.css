@@ -5,23 +5,27 @@
 }
 
 body {
-  font-family: 'montseratt', sans-serif;
+  font-family: "montseratt", sans-serif;
 }
 
 .app {
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url("./assets/cold-bg.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
 }
 
 .app.warm {
-  background-image: url('./assets/warm-bg.jpg');
+  background-image: url("./assets/warm-bg.jpg");
 }
 
 main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
   padding: 25px;
 }
 
@@ -45,7 +49,7 @@ main {
   margin-top: -25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-  
+
   color: #313131;
   font-size: 20px;
 
@@ -57,7 +61,7 @@ main {
 }
 
 .location-box .location {
-  color: #FFF;
+  color: #fff;
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -65,7 +69,7 @@ main {
 }
 
 .location-box .date {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
@@ -77,27 +81,74 @@ main {
   text-align: center;
 }
 
+.weather-icon {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.weather-icon img {
+  display: block;
+  width: 128px;
+}
+
 .weather-box .temp {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 16px;
 
   padding: 15px 25px;
 
-  color: #FFF;
+  color: #fff;
   font-size: 102px;
   font-weight: 900;
 
-  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
   text-align: center;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .weather-box .weather {
-  color: #FFF;
+  color: #fff;
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.error-box {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  color: #ffdb58;
+  margin: 30px auto;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+}
+
+.info-box p {
+  font-size: 15px;
+  color: #87ceeb;
+  float: left;
+  margin: 0 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .info-box p {
+    text-align: center;
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+
+  .info-box {
+    height: 50px;
+  }
+}
+
+.hidden {
+  display: none;
 }

@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b6fe81a8-d4c3-41a6-ba2d-e931aa5c2bd1/deploy-status)](https://app.netlify.com/sites/weather-app-reactjs-ipinfo/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
